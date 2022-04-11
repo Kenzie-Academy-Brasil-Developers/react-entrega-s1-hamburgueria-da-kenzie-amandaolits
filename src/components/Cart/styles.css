@@ -1,0 +1,147 @@
+aside h2 {
+  color: white;
+  font-family: 'inter', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cabeçalho-cart {
+  display: flex;
+  height: 25%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background: #27AE60;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.carrinho-compras-vazio {
+  background-color: #F5F5F5;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.carrinho-compras-vazio p{
+  margin: 0;
+  font-family: 'inter', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333333;
+}
+
+.carrinho-compras-vazio span {
+  font-family: 'inter', sans-serif;
+  font-size: 14px;
+  color: #828282;
+}
+
+.carrinho-compras {
+  overflow: auto;
+  height: 65%;
+}
+
+.carrinho-compras span {
+  color: #828282;
+}
+
+.carrinho-product {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.carrinho-product figure {
+  margin: 0;
+  background-color: #E0E0E0;
+  width: 25%;
+  height: 25%;
+  border-radius: 10px;
+}
+
+.carrinho-product figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.carrinho-product button {
+  font-family: 'inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  border: none;
+  background-color: transparent;
+}
+
+.carrinho-product button:hover{
+  text-decoration-line: underline;
+  color: #333333;
+  cursor: pointer;
+}
+
+.preço-total {
+  text-align: center;
+}
+
+.preço-total .total {
+  font-family: 'inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333333;
+}
+
+.preço-total .preço {
+  font-family: 'inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #828282;
+}
+
+.preço-total button {
+  background: #E0E0E0;
+  border: 2px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 90%;
+  color: #828282;
+  height: 60px;
+}
+
+.preço-total button:hover{
+  background-color: #828282;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  aside h2 {
+      font-size: 18px;
+  }
+
+  .carrinho-product figure {
+      min-width: 80px;
+      min-height: 80px;
+  }
+  .carrinho-compras {
+      overflow: auto;
+      display: flex;
+      height: 60vh;
+      flex-direction: column;
+  }
+  .carrinho-compras-vazio {
+      background-color: #F5F5F5;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+}
